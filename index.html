@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lemos Coffee House</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&amp;family=Hanken+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#151c00",
+                      "inverse-surface": "#30312e",
+                      "surface-container-low": "#f5f3ef",
+                      "on-secondary-fixed-variant": "#623f18",
+                      "secondary-container": "#ffca98",
+                      "surface-variant": "#e4e2de",
+                      "primary": "#25160e",
+                      "surface-dim": "#dbdad6",
+                      "on-surface-variant": "#4f4540",
+                      "surface-container-high": "#eae8e4",
+                      "tertiary-container": "#283204",
+                      "primary-fixed-dim": "#dec1b3",
+                      "surface-container": "#efeeea",
+                      "on-primary-fixed-variant": "#574238",
+                      "on-tertiary-container": "#8f9c62",
+                      "surface-bright": "#fbf9f5",
+                      "on-primary-fixed": "#281810",
+                      "tertiary-fixed": "#dbe9a9",
+                      "on-secondary-fixed": "#2c1600",
+                      "error-container": "#ffdad6",
+                      "on-surface": "#1b1c1a",
+                      "secondary-fixed": "#ffdcbd",
+                      "surface-tint": "#705a4f",
+                      "inverse-primary": "#dec1b3",
+                      "on-secondary-container": "#7a532a",
+                      "outline": "#81756f",
+                      "on-error": "#ffffff",
+                      "on-tertiary-fixed": "#171e00",
+                      "primary-fixed": "#fbdcce",
+                      "error": "#ba1a1a",
+                      "on-secondary": "#ffffff",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#bfcd8f",
+                      "secondary-fixed-dim": "#f0bd8b",
+                      "surface-container-highest": "#e4e2de",
+                      "surface": "#fbf9f5",
+                      "inverse-on-surface": "#f2f0ed",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#d3c3bd",
+                      "on-background": "#1b1c1a",
+                      "secondary": "#7d562d",
+                      "on-primary-container": "#aa9084",
+                      "on-error-container": "#93000a",
+                      "primary-container": "#3c2a21",
+                      "on-tertiary-fixed-variant": "#404b1b",
+                      "background": "#fbf9f5"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "xl": "80px",
+                      "sm": "12px",
+                      "base": "8px",
+                      "md": "24px",
+                      "lg": "48px",
+                      "xs": "4px",
+                      "gutter": "24px",
+                      "max-width": "1280px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px"
+              },
+              "fontFamily": {
+                      "body-md": ["Hanken Grotesk"],
+                      "body-lg": ["Hanken Grotesk"],
+                      "display-lg": ["EB Garamond"],
+                      "headline-sm": ["EB Garamond"],
+                      "headline-md": ["EB Garamond"],
+                      "label-md": ["Hanken Grotesk"],
+                      "display-lg-mobile": ["EB Garamond"],
+                      "label-sm": ["Hanken Grotesk"]
+              },
+              "fontSize": {
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "600"}],
+                      "headline-sm": ["24px", {"lineHeight": "1.3", "fontWeight": "500"}],
+                      "headline-md": ["32px", {"lineHeight": "1.2", "fontWeight": "500"}],
+                      "label-md": ["14px", {"lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "display-lg-mobile": ["36px", {"lineHeight": "1.1", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "1.0", "fontWeight": "500"}]
+              }
+            },
+          },
+        }
+    </script>
+
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-primary-fixed-dim selection:text-primary">
+<!-- Top Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-white/10 shadow-sm">
+<div class="flex justify-between items-center px-6 md:px-64 py-4 max-w-max-width mx-auto">
+<div class="font-display-lg text-headline-sm text-primary">Lemos Coffee House</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-label-md uppercase tracking-wider text-primary border-b-2 border-primary pb-1 transition-all duration-200" href="#">Nossa História</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Café Especial</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Confeitaria</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-200" href="#">Endereços</a>
+<a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-primary transition-all duration-200" href="#">&#9749</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-primary transition-transform duration-300 hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider transition-all duration-300 hover:scale-105 active:scale-95">Compre Agora</button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 parallax-bg z-0" data-alt="A cinematic, wide-angle photograph of a sophisticated modern coffee shop interior at dawn. Warm morning sunlight filters through tall windows, illuminating dust motes and highlighting the polished concrete floors, oak wood tables, and a sleek marble espresso bar. The aesthetic is high-end minimalism with a soft, inviting atmosphere, blending deep espresso tones with creamy oat accents." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAP_6DspXaa7ijzMwNnFVDg5FTnwNn0fd8g4i_mtOEQRUCJU8dZIczfgnVQp__GmhBUwrdxcTp8HiMh7o17BVMsBs4NJ5skOiWdkVHSley5gzxN6pNcMhN5cIqHzo_ITX9XgFHpGxwnL6nHVCAtE9NeEs4kg7ghqwjevCc9S4uBDKgbR19p4-SlEJWoiBpQlu4FUeZeqcDSupLrLqd5aNHDmDevC3-h6Fhou2EjMoMX_G2eydGoPNqirsNjEb56n1tF410qe3m-LM8')">
+</div>
+<div class="absolute inset-0 bg-black/30 z-10"></div>
+<div class="relative z-20 text-center px-6 fade-in">
+<h1 class="font-display-lg text-white text-5xl md:text-7xl mb-8 leading-tight">A arte do<br/>Preparo Perfeito</h1>
+<button class="glass-panel text-white px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all duration-500 transform hover:scale-105">
+                Veja nosso Cardápio
+            </button>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 text-white/60 animate-bounce">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</section>
+
+<section class="py-xl px-6 md:px-margin-desktop max-w-max-width mx-auto">
+<div class="text-center mb-16 scroll-reveal">
+<span class="font-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Gourmet</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary">Produtos em Destaque</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-md scroll-reveal shadow-[0_8px_30px_rgba(37,22,14,0.04)] transition-all duration-500 hover:-translate-y-2">
+<div class="aspect-square mb-6 overflow-hidden rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close-up of a premium bag of single-origin coffee beans placed on a textured stone countertop. The lighting is soft and directional, highlighting the rich texture of the matte black packaging and the organic shapes of scattered roasted coffee beans. The mood is sophisticated and artisanal, reflecting a high-end coffee ritual." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGbI4EiHifwGGLz-Y3LEjNEZsnljALtZKkSq3yxf21XU3JBsxiNbCkT1_rpn8hhRCM-2RGJyg1ToizFeZgkGl8NslNn1K39BXIaAa_MmA3r7CtpjRpSXuw6xUO_AqYunOzU2GJeaghNx5jR_ntospZMOh6ofhoyZQm_OMuA4davTkgUfmhGcPbBlhTd6NsxqYRufMQSzpdsTH3ffZfiBl6L1I22qEDlfB-OfatbNdGToLQz_gLWOA6ht6Eeb9hFYV_eRXoH46N_pw"/>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Ethiopian Coffee</h3>
+<p class="text-on-surface-variant font-body-md mb-6">Notas florais com finalização cítrica, originário de pequenos produtores.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary">R$24.00</span>
+<button class="text-primary hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-md scroll-reveal shadow-[0_8px_30px_rgba(37,22,14,0.04)] transition-all duration-500 hover:-translate-y-2" style="transition-delay: 100ms;">
+<div class="aspect-square mb-6 overflow-hidden rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A beautifully crafted ceramic cup of caffe latte with intricate tulip latte art. The cup sits on a rustic wooden saucer in a bright, sunlit cafe setting. Soft focus background shows a clean, minimalist interior with warm neutral tones and subtle greenery, emphasizing the tactile beauty of a morning coffee ritual." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOUoNpMqLoP7jXY6j2F7JJRQtjlx-Kw5oA7-UtmNZfe1SfYvJ54sRrxtz8kflN4oDh107w-uIIhjj505qVKELI29aXlO3Rm5wPMWQlIeQ3U4vC0F9zQMaZZ7pgt47hTlS8AztGJ5CV5raKnR_QfS3s7cI1jsGrJalL9eos7_bh0rMYsvBdiUOPvGN5kVcEM92MSOD4uA_Sywq3ftxbNqIAdKSvtalKpZj58aojWGZjx18TwZmQ5wlIiBonMl7SACIiOF9M0PcBdA"/>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Velvet House Blend</h3>
+<p class="text-on-surface-variant font-body-md mb-6">O blend perfeito para os amantes de sabor equilibrado e complexo.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary">R$18.00</span>
+<button class="text-primary hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+
+<div class="group relative overflow-hidden rounded-xl bg-surface-container-lowest p-md scroll-reveal shadow-[0_8px_30px_rgba(37,22,14,0.04)] transition-all duration-500 hover:-translate-y-2" style="transition-delay: 200ms;">
+<div class="aspect-square mb-6 overflow-hidden rounded-lg bg-surface-container-low">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A tall glass of cold brew coffee with large ice cubes, showing beautiful condensation on the outside of the glass. The dark, rich coffee contrasts with the bright, high-key lighting of a modern minimalist kitchen. A sprig of mint or a slice of orange sits nearby, adding a fresh, artisanal touch to the composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBegTMPn1_qFDo-lkOJzeVGbH716cmHmtBkuPclfKRYBtddyYGd6MaWI37AvCX0ynwxvyJVDiYMhOwJODRaSzfyu7xqy15VHBLeF3JV60bK5oTT6fQwgHOjtg6CvCU2ZLyQ1DP48Wp_OMYx33jAuRyx8CzAwS59N3shmorqhv2nJKwI9SdjTShmewsE2wpiB1eAc0CEW-mIEdKhCGlVOiz59OSEmyPAHgWTHDsVU__evvKQgQS-O8vavD9jztggRb6yk7MDglYbayk"/>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Café Gelado</h3>
+<p class="text-on-surface-variant font-body-md mb-6">18 horas de extração lenta para um café incrivelmente suave e com baixa acidez.</p>
+<div class="flex justify-between items-center">
+<span class="font-label-md text-primary">R$22.00</span>
+<button class="text-primary hover:translate-x-1 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="bg-surface-container-low py-xl overflow-hidden">
+<div class="max-w-max-width mx-auto px-6 md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div class="scroll-reveal">
+<span class="font-label-md text-secondary uppercase tracking-[0.2em] mb-4 block">Assado diariamente</span>
+<h2 class="font-display-lg text-headline-md md:text-display-lg text-primary mb-8 leading-tight">Confeitaria Artesanal <br/>Do Nosso Forno</h2>
+<p class="text-on-surface-variant font-body-lg mb-10 max-w-md">Nossos padeiros despertam antes do amanhecer para criar pequenos lotes de folhados sazonais, feitos com grãos selecionados e manteiga maturada.</p>
+<ul class="space-y-6">
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 group">
+<span class="text-secondary font-headline-sm">01</span>
+<span class="font-headline-sm text-primary group-hover:translate-x-2 transition-transform">Croissant de Mel e Flor de Sal</span>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 group">
+<span class="text-secondary font-headline-sm">02</span>
+<span class="font-headline-sm text-primary group-hover:translate-x-2 transition-transform">Pão doce de Pistache</span>
+</li>
+<li class="flex items-center gap-4 border-b border-outline-variant pb-4 group">
+<span class="text-secondary font-headline-sm">03</span>
+<span class="font-headline-sm text-primary group-hover:translate-x-2 transition-transform">Torta de Blueberry</span>
+</li>
+</ul>
+</div>
+<div class="relative scroll-reveal">
+<div class="rounded-2xl overflow-hidden aspect-[4/5] shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Detailed close-up of a flaky, golden-brown croissant resting on a crumpled piece of linen. The morning light catches the delicate layers of pastry, casting soft shadows. The background is a warm, earthy tone of a wooden bakery table, creating a tactile and appetizing visual that emphasizes artisan quality and freshness." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU8u-IPPFG9bwrqNS8Z4MNSFpoWysuspXZCdLwDyp0UorMchk8IEvj_KXimHJeedjJZp0NhCfNLAYmPtEhjqqWl29HVu7iXTaRyB9SVwFBDbFQIakaJXiNqJd8Pvfgu4x0QFv9dgHKbvrpZcAKqx92jNT_GR1TJfCdO6Vpah9xYkAbMf6Ogbl5xQFzK-e8Ai9xKj0qDukBz1xJJONqWyEY26aF0YYzZ0hst0zLWzHb9pQVyuZh3X89cqVsr136oXJ9Z0___aCIFU8"/>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="py-xl bg-background">
+<div class="max-w-max-width mx-auto px-6 text-center">
+<div class="relative max-w-2xl mx-auto scroll-reveal" id="testimonial-container">
+<span class="material-symbols-outlined text-primary-fixed-dim text-6xl mb-8">format_quote</span>
+<div class="transition-opacity duration-500" id="testimonial-content">
+<p class="font-display-lg text-headline-md text-primary mb-8 leading-relaxed">"A atmosfera do Lemos Coffee House é incomparável. É o meu refúgio diário, tanto para trabalhar quanto para espairecer."</p>
+<h4 class="font-label-md text-primary uppercase tracking-widest">Marcel Lemos</h4>
+</div>
+
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-xl border-t border-surface-container-high">
+<div class="max-w-max-width mx-auto px-6 md:px-margin-desktop">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-24 scroll-reveal">
+<div class="aspect-square rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Top-down view of a dark wooden table with several cups of coffee and an open notebook. The scene is lit by warm cafe lighting, creating a cozy and productive vibe. The aesthetic is clean and modern, focusing on the social aspect of coffee culture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADVjIqfcjYIZ89e0Jm3pom0FVDqMlOMLGi4vRn-ilEbiak9r6YqQCgjYZA1GxZAiVvetReXX4FnQJ5e4Ucgo0zlm10wg5HlVIa8JiQSPkW7ytzwu-NLy-HtMlOfK9QYn-O3n2yC1HS0hGVHO1nt3dYxl8Wrj2jffXiEriELU_YNf8lLdf2_z9PnzJNtsIEtVXwsTjHzlN77FfCjKaOVJ7aVrIdCcYQPYnMkNBRfcPtbO8Z7yVJyyctAMiP0s-O_4PBCqWZ3SaVE04"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Close-up of an espresso machine pouring a double shot into a small white ceramic cup. The steam and rich crema are visible, capturing the precision and professional craft of an expert barista. The lighting is focused and dramatic, highlighting the high-end machinery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGiMehZ43WF3V1Sb7ANg5ncdk4_CCZR5tkWeUtI8HDLohM5CkeRMI6tOis9FBpjHykaZubgaP2dj0Gy9WnNvRuPiWFuEvp_Pj9Nb_IjdTUcjB5MfmhdgR45B8OgXQuprfN0Rvupi9qQaI0xrbFTFHFurruv6TkGrQdWCozmCr3Y2uLirxhLHDCpJSGxUHWg08s1cXTWNPCIUX_E7KmJwTpxqmNnBOdol7U62WwM1xl_D-EVtSFoi6D3-CbOCFpF_waRHwz0QUhu8Q"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A wide view of a minimalist cafe counter with a clean glass display showing artisan pastries. The background features a textured concrete wall and soft, warm backlighting. The composition is balanced and elegant, reflecting the brand's sophisticated aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgx6_fwQ9jA_EBFgzeHkV_5F_HeVgEFQRddjMN2cm6wxphn3GEasoF5Cgn3skp0EawiWI3Br11txLavIKdHBMRFbhlcT-omVmh6_EAtUTZ0Ce8ND_G7sXBtPUNuOOvnAVX8JeS6BUOjSjiZ5F2E0Zg3V0UBuyuODZKe0A3miI6rWw9YGV7h5i3ibKA5HcJe6FkQJscyJJTMlB8kWj3iE2ovDn9ixiSn9yS7VoigJl8ZUahuao0mm0ulNEa3WjuFx4duK6OE_Kz2r0"/>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A person's hands holding a warm mug of coffee, wrapped in a soft wool sweater. The scene is intimate and cozy, emphasizing the 'composed warmth' of the brand identity. The palette is dominated by neutral oat and deep espresso tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuADShXkbDKyrMRSwDuDqbDAt5xmgPsU5nuhVBBvGA-lygcUyWrujL1UclXTO35nhvBS78F3eOzHMpl-brScbe0Y7X8RNeLliKCzcc2m85KMZuHi43SNs9xYFaT5hw3uS7SBAbvi-lMOmWfX7yelg3Z2T2oaeiFNNrAXfDFZ56cykS2UhMeNJIabgvjbTs2Tg4nP50dZ-d-slzbOrCIE5cQvpEZi_0i-LecTU2-9zCVnVYc5HpRGfXG0Hz2xgIWnplIWwgUyzM5C-8Y"/>
+</div>
+</div>
+<div class="max-w-4xl mx-auto glass-panel rounded-3xl p-12 text-center scroll-reveal shadow-xl">
+<h3 class="font-headline-md text-primary mb-6">Junte-se a nós</h3>
+<p class="text-on-surface-variant font-body-md mb-8">Inscreva-se para receber dicas exclusivas de preparo, lançamentos e eventos especiais.</p>
+<form class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-1 bg-surface-container/50 border-outline-variant focus:ring-primary focus:border-primary rounded-full px-6 py-4 outline-none" placeholder="Seu endereço de email" type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label-md text-label-md uppercase tracking-wider transition-all hover:bg-primary/90">Cadastre-se</button>
+</form>
+</div>
+</div>
+</section>
+
+<section class="h-[500px] relative w-full overflow-hidden">
+<div class="absolute inset-0 grayscale contrast-125 opacity-40">
+<img class="w-full h-full object-cover" data-alt="A stylized, high-contrast map of a metropolitan city center, presented in a minimalist monochromatic palette of greys and blacks. The map emphasizes the architectural layout and urban geometry, fitting the high-end, sophisticated aesthetic of the brand." data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArFa4JalYcLw3M0jTemJvgzbs7bjPvhPmcceblb2a6zkYpuGNWbT6mIIcsYiEM4-hiR2hBKMrT2zS97dBs4w25jEIR45hLF_6sRBdDaSD5ViC9CnQplNaFZKWoPTnwUFtuFz11-PLiab1LBCgDyo4eLlCuwGyw-2xg7qVPI6ZpI4RhswQz6O-d5Qiq8o2ylMRL3Dz6_bGZzIRryyswEgrxfSaQDmc2TffHVFrOtRp-a87Wo60uZa7gmDwFac761Slw9tjpgX08pFs"/>
+</div>
+<div class="absolute inset-0 flex items-center justify-center p-6">
+<div class="bg-white/90 backdrop-blur-md p-10 rounded-2xl shadow-2xl max-w-sm scroll-reveal">
+<h4 class="font-headline-sm text-primary mb-4">Visite nossa casa</h4>
+<p class="text-on-surface-variant mb-4">Av. Paulista 123<br/>São Paulo, SP</p>
+<div class="space-y-2 mb-6">
+<div class="flex justify-between text-sm">
+<span class="font-bold">Seg – Sex</span>
+<span>07:00 – 19:00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="font-bold">Sáb – Dom</span>
+<span>08:00 – 20:00</span>
+</div>
+</div>
+<button class="w-full border border-primary text-primary py-3 rounded-full font-label-md text-label-md uppercase tracking-wider hover:bg-primary hover:text-white transition-all">Obter Direções</button>
+</div>
+</div>
+</section>
+
+<footer class="bg-surface-container-highest py-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-6 md:px-64 max-w-max-width mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="font-display-lg text-headline-md text-primary mb-6">Lemos Coffee House</div>
+<p class="text-on-surface-variant text-sm mb-6">Onde o café se torna uma experiência</p>
+<div class="flex gap-4">
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="text-primary hover:scale-110 transition-transform" href="#"><span class="material-symbols-outlined">public</span></a>
+</div>
+</div>
+<div>
+<h5 class="font-label-md text-primary font-bold mb-6">Experiência</h5>
+<ul class="space-y-4 text-on-surface-variant text-body-md">
+<li><a class="hover:text-primary transition-colors" href="#">Nossa História</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Guias de Preparo</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustentabilidade</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Atacado</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-primary font-bold mb-6">Loja</h5>
+<ul class="space-y-4 text-on-surface-variant text-body-md">
+<li><a class="hover:text-primary transition-colors" href="#">Singles</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Blends</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Acessórios</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-md text-primary font-bold mb-6">Suporte</h5>
+<ul class="space-y-4 text-on-surface-variant text-body-md">
+<li><a class="hover:text-primary transition-colors" href="#">Contato</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Envio e Devoluções</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Carreiras</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Termos de Serviço</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-max-width mx-auto px-6 md:px-64 mt-16 pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-on-surface-variant text-sm text-center">© 2023 Lemos Coffee House. Todos os direitos reservados.</p>
+<div class="flex gap-8 text-sm text-on-surface-variant">
+<a class="hover:text-primary" href="#">Política de Privacidade</a>
+<a class="hover:text-primary" href="#">Termos de Serviço</a>
+</div>
+</div>
+</footer>
+<script src="./scripts.js"></script>
+</body>
+</html>
