@@ -1,19 +1,19 @@
- /* ==========================================================================
+/* ==========================================================================
            VARIÁVEIS DE DESIGN (Substituindo o Tailwind Config)
            ========================================================================== */
         :root {
-            /* Cores */
-            --color-primary: #25160e;
-            --color-on-primary: #ffffff;
-            --color-secondary: #7d562d;
-            --color-background: #fbf9f5;
-            --color-on-surface: #1b1c1a;
-            --color-on-surface-variant: #4f4540;
-            --color-surface-container-low: #f5f3ef;
-            --color-surface-container-lowest: #ffffff;
-            --color-surface-container-highest: #e4e2de;
-            --color-outline-variant: #d3c3bd;
-            --color-primary-fixed-dim: #dec1b3;
+            /* Cores — Dark Theme */
+            --color-primary: #e8c9a0;
+            --color-on-primary: #1a0f06;
+            --color-secondary: #c49a6c;
+            --color-background: #0f0b08;
+            --color-on-surface: #ede8e3;
+            --color-on-surface-variant: #a89b90;
+            --color-surface-container-low: #1c1611;
+            --color-surface-container-lowest: #161009;
+            --color-surface-container-highest: #2a211a;
+            --color-outline-variant: #3d3028;
+            --color-primary-fixed-dim: #7a5c3a;
 
             /* Tipografia */
             --font-display: 'EB Garamond', serif;
@@ -71,7 +71,7 @@
             top: 0;
             width: 100%;
             z-index: 50;
-            background: rgba(251, 249, 245, 0.7);
+            background: rgba(15, 11, 8, 0.75);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
             border-b: 1px solid rgba(255, 255, 255, 0.1);
@@ -189,7 +189,7 @@
 
         .hero-title {
             font-family: var(--font-display);
-            color: #ffffff;
+            color: var(--color-primary);
             font-size: 48px;
             line-height: 1.1;
             margin-bottom: 32px;
@@ -204,7 +204,7 @@
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid rgba(255, 255, 255, 0.2);
-            color: #ffffff;
+            color: var(--color-primary);
             padding: 16px 40px;
             border-radius: 9999px;
             font-size: 14px;
@@ -275,7 +275,8 @@
             background: var(--color-surface-container-lowest);
             padding: 24px;
             border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(37, 22, 14, 0.04);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+            border: 1px solid var(--color-outline-variant);
             transition: all 0.5s;
         }
         .product-card:hover { transform: translateY(-8px); }
@@ -375,7 +376,7 @@
             border-radius: 16px;
             overflow: hidden;
             aspect-ratio: 4/5;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.5);
         }
 
         /* ==========================================================================
@@ -437,7 +438,7 @@
         .gallery-item:hover .gallery-video { transform: scale(1.1); }
 
         .newsletter-panel {
-            background: rgba(255, 255, 255, 0.2);
+            background: rgba(26, 18, 10, 0.7);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
             border: 1px solid var(--color-outline-variant);
@@ -446,7 +447,7 @@
             text-align: center;
             max-width: 896px;
             margin: 0 auto;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.05);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.4);
         }
 
         .newsletter-form {
@@ -460,12 +461,14 @@
 
         .newsletter-input {
             flex: 1;
-            background: rgba(239, 238, 234, 0.5);
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--color-on-surface);
             border: 1px solid var(--color-outline-variant);
             border-radius: 9999px;
             padding: 16px 24px;
             outline: none;
         }
+        .newsletter-input::placeholder { color: var(--color-on-surface-variant); }
         .newsletter-input:focus { border-color: var(--color-primary); }
 
         .newsletter-btn {
@@ -479,7 +482,7 @@
             letter-spacing: 0.05em;
             transition: background 0.3s;
         }
-        .newsletter-btn:hover { background-color: rgba(37, 22, 14, 0.9); }
+        .newsletter-btn:hover { background-color: #d4b48a; }
 
         /* ==========================================================================
            LOCALIZAÇÃO
@@ -498,8 +501,8 @@
             height: 100%;
             object-fit: cover; /* Faz a imagem preencher toda a section */
             object-position: center;
-            filter: grayscale(1) contrast(1.25);
-            opacity: .4;
+            filter: grayscale(1) contrast(1.1) brightness(0.25);
+            opacity: .9;
         }
 
         .location-card-wrapper {
@@ -512,11 +515,12 @@
         }
 
         .location-card {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(22, 16, 9, 0.92);
             backdrop-filter: blur(8px);
             padding: 20px;
             border-radius: 16px;
-            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            border: 1px solid var(--color-outline-variant);
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.6);
             max-width: 250px;
             width: 100%;
         }
