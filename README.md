@@ -11,13 +11,13 @@ Este projeto é uma landing page estática chamada **Lemos Coffee House**. Ele a
 - Destaques de produtos especiais
 - Sessões de confeitaria e café artesanal
 - Animações de rolagem e estilo glassmorphism
+- Videos
 
 ## Tecnologias usadas
 
 - HTML
 - CSS
 - JavaScript
-- Tailwind CSS via CDN
 
 ## Arquivos principais
 
