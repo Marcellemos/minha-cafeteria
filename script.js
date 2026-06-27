@@ -8,3 +8,5 @@ const observerOptions = { threshold: 0.1 };
         }, observerOptions);
 
         document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+        
